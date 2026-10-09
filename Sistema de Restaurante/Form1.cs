@@ -51,6 +51,7 @@ namespace Sistema_de_Restaurante
             switch (conteo)
             {
                 case 2:
+                    Program.usuario = "admin";
                     MenuAdministrador f1 = new MenuAdministrador();
                     f1.Show();
                     this.Hide();

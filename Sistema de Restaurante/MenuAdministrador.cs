@@ -17,7 +17,7 @@ namespace Sistema_de_Restaurante
 
         private void MenuAdministrador_Load(object sender, EventArgs e)
         {
-            this.BackgroundImage = Image.FromFile(@"images\fondoAdm.png");
+            this.BackgroundImage = Image.FromFile(@"images\fondoMenus.png");
             this.BackgroundImageLayout = ImageLayout.Stretch;
         }
 

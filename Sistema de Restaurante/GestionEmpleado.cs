@@ -20,5 +20,12 @@ namespace Sistema_de_Restaurante
             this.BackgroundImage = Image.FromFile(@"images\fondoOpciones.png");
             this.BackgroundImageLayout = ImageLayout.Stretch;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MenuAdministrador f1 = new MenuAdministrador();
+            f1.Show();
+            this.Hide();
+        }
     }
 }
