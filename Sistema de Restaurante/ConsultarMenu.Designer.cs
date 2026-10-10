@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             button2 = new Button();
             button1 = new Button();
             label1 = new Label();
-            comboBox1 = new ComboBox();
             label2 = new Label();
             dataGridView1 = new DataGridView();
+            comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -69,15 +70,7 @@
             label1.Size = new Size(219, 65);
             label1.TabIndex = 67;
             label1.Text = "Consultar Menú";
-            // 
-            // comboBox1
-            // 
-            comboBox1.Font = new Font("Gabriola", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(519, 60);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(238, 37);
-            comboBox1.TabIndex = 72;
+            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -94,10 +87,27 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Window;
+            dataGridViewCellStyle4.Font = new Font("Gabriola", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             dataGridView1.Location = new Point(35, 182);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(731, 83);
             dataGridView1.TabIndex = 74;
+            // 
+            // comboBox1
+            // 
+            comboBox1.Font = new Font("Gabriola", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(519, 60);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(238, 37);
+            comboBox1.TabIndex = 72;
             // 
             // ConsultarMenu
             // 
@@ -124,8 +134,8 @@
         private Button button2;
         private Button button1;
         private Label label1;
-        private ComboBox comboBox1;
         private Label label2;
         private DataGridView dataGridView1;
+        private ComboBox comboBox1;
     }
 }

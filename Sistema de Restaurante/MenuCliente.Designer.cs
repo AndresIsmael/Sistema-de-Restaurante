@@ -32,6 +32,7 @@
             button2 = new Button();
             button1 = new Button();
             label1 = new Label();
+            button7 = new Button();
             SuspendLayout();
             // 
             // button4
@@ -43,6 +44,7 @@
             button4.TabIndex = 15;
             button4.Text = "Consultar pedido";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button2
             // 
@@ -53,6 +55,7 @@
             button2.TabIndex = 14;
             button2.Text = "Realizar pedido";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -63,6 +66,7 @@
             button1.TabIndex = 13;
             button1.Text = "Consultar menu";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
@@ -75,12 +79,24 @@
             label1.TabIndex = 12;
             label1.Text = "Bienvenido cliente";
             // 
+            // button7
+            // 
+            button7.Font = new Font("Gabriola", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button7.Location = new Point(638, 398);
+            button7.Name = "button7";
+            button7.Size = new Size(150, 40);
+            button7.TabIndex = 16;
+            button7.Text = "Salir";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
             // MenuCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
             ClientSize = new Size(800, 450);
+            Controls.Add(button7);
             Controls.Add(button4);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -97,5 +113,6 @@
         private Button button2;
         private Button button1;
         private Label label1;
+        private Button button7;
     }
 }

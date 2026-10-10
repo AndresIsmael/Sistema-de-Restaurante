@@ -42,8 +42,10 @@
             label1 = new Label();
             comboBox1 = new ComboBox();
             comboBox2 = new ComboBox();
-            textBox2 = new TextBox();
             label3 = new Label();
+            comboBox3 = new ComboBox();
+            comboBox4 = new ComboBox();
+            label7 = new Label();
             SuspendLayout();
             // 
             // button4
@@ -55,6 +57,7 @@
             button4.TabIndex = 69;
             button4.Text = "Buscar";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -65,6 +68,7 @@
             button3.TabIndex = 68;
             button3.Text = "Eliminar";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // textBox7
             // 
@@ -106,11 +110,12 @@
             button1.TabIndex = 64;
             button1.Text = "Guardar cambios";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // textBox1
             // 
             textBox1.Font = new Font("Gabriola", 12F);
-            textBox1.Location = new Point(196, 132);
+            textBox1.Location = new Point(187, 134);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(222, 35);
             textBox1.TabIndex = 59;
@@ -120,7 +125,7 @@
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Gabriola", 15.75F, FontStyle.Bold);
-            label6.Location = new Point(86, 283);
+            label6.Location = new Point(43, 346);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
             label6.Size = new Size(105, 39);
@@ -156,7 +161,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Gabriola", 15.75F, FontStyle.Bold);
-            label2.Location = new Point(43, 130);
+            label2.Location = new Point(34, 132);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(148, 39);
@@ -192,32 +197,56 @@
             comboBox2.Size = new Size(222, 37);
             comboBox2.TabIndex = 71;
             // 
-            // textBox2
-            // 
-            textBox2.Font = new Font("Gabriola", 12F);
-            textBox2.Location = new Point(196, 203);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(222, 35);
-            textBox2.TabIndex = 73;
-            // 
             // label3
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Gabriola", 15.75F, FontStyle.Bold);
-            label3.Location = new Point(69, 201);
+            label3.Location = new Point(69, 205);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(120, 39);
+            label3.Size = new Size(113, 39);
             label3.TabIndex = 72;
-            label3.Text = "Observaciones";
+            label3.Text = "Tipo de pago";
+            // 
+            // comboBox3
+            // 
+            comboBox3.Font = new Font("Gabriola", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new Point(187, 206);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(222, 37);
+            comboBox3.TabIndex = 74;
+            // 
+            // comboBox4
+            // 
+            comboBox4.Font = new Font("Gabriola", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            comboBox4.FormattingEnabled = true;
+            comboBox4.Location = new Point(187, 281);
+            comboBox4.Name = "comboBox4";
+            comboBox4.Size = new Size(222, 37);
+            comboBox4.TabIndex = 76;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Gabriola", 15.75F, FontStyle.Bold);
+            label7.Location = new Point(69, 280);
+            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(90, 39);
+            label7.TabIndex = 75;
+            label7.Text = "Empleado";
             // 
             // GestionarPedidos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
+            Controls.Add(comboBox4);
+            Controls.Add(label7);
+            Controls.Add(comboBox3);
             Controls.Add(label3);
             Controls.Add(comboBox2);
             Controls.Add(comboBox1);
@@ -256,7 +285,9 @@
         private Label label1;
         private ComboBox comboBox1;
         private ComboBox comboBox2;
-        private TextBox textBox2;
         private Label label3;
+        private ComboBox comboBox3;
+        private ComboBox comboBox4;
+        private Label label7;
     }
 }

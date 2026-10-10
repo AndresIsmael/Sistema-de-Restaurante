@@ -58,7 +58,10 @@ namespace Sistema_de_Restaurante
                     break;
 
                 case 4:
-                    MessageBox.Show("Ingreso a mesero");
+                    Program.usuario = "mesero";
+                    MenuMesero f3 = new MenuMesero();
+                    f3.Show();
+                    this.Hide();
                     break;
 
                 case 6:

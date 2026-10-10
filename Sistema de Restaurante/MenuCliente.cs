@@ -20,5 +20,33 @@ namespace Sistema_de_Restaurante
             this.BackgroundImage = Image.FromFile(@"images\fondoMenus.png");
             this.BackgroundImageLayout = ImageLayout.Stretch;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ConsultarMenu f1 = new ConsultarMenu();
+            f1.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CreatePedido f2 = new CreatePedido();
+            f2.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ConsultarPedido f2 = new ConsultarPedido();
+            f2.Show();
+            this.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form1 f2 = new Form1();
+            f2.Show();
+            this.Hide();
+        }
     }
 }

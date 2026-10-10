@@ -62,5 +62,12 @@ namespace Sistema_de_Restaurante
             f1.Show();
             this.Hide();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Hide();
+        }
     }
 }
