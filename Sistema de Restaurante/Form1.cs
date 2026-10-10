@@ -62,7 +62,10 @@ namespace Sistema_de_Restaurante
                     break;
 
                 case 6:
-                    MessageBox.Show("Ingreso a cliente");
+                    Program.usuario = "cliente";
+                    MenuCliente f2 = new MenuCliente();
+                    f2.Show();
+                    this.Hide();
                     break;
 
                 default:

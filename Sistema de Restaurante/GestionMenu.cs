@@ -37,8 +37,6 @@ namespace Sistema_de_Restaurante
         private void button4_Click(object sender, EventArgs e)
         {
             string file = "menus.json";
-            button1.Enabled = true;
-            button3.Enabled = true;
 
             if (File.Exists(file))
             {
@@ -51,6 +49,9 @@ namespace Sistema_de_Restaurante
                 }
                 else
                 {
+                    button1.Enabled = true;
+                    button3.Enabled = true;
+
                     textBox1.Text = carta.NombreMenu.ToString();
                     textBox4.Text = carta.Almuerzo.ToString();
                     textBox3.Text = carta.Desayuno.ToString();
