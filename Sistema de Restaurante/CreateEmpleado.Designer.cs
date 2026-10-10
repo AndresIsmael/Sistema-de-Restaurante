@@ -30,7 +30,7 @@
         {
             button2 = new Button();
             button1 = new Button();
-            textBox5 = new TextBox();
+            textBox4 = new TextBox();
             textBox3 = new TextBox();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
@@ -63,14 +63,15 @@
             button1.TabIndex = 31;
             button1.Text = "Guardar";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // textBox5
+            // textBox4
             // 
-            textBox5.Font = new Font("Gabriola", 12F);
-            textBox5.Location = new Point(126, 194);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(222, 35);
-            textBox5.TabIndex = 29;
+            textBox4.Font = new Font("Gabriola", 12F);
+            textBox4.Location = new Point(126, 194);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(222, 35);
+            textBox4.TabIndex = 29;
             // 
             // textBox3
             // 
@@ -184,7 +185,7 @@
             Controls.Add(dateTimePicker1);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(textBox5);
+            Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
@@ -205,7 +206,7 @@
 
         private Button button2;
         private Button button1;
-        private TextBox textBox5;
+        private TextBox textBox4;
         private TextBox textBox3;
         private TextBox textBox2;
         private TextBox textBox1;

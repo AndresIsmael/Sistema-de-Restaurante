@@ -207,6 +207,8 @@
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(222, 35);
             textBox7.TabIndex = 19;
+            textBox7.Enter += textBox7_Enter;
+            textBox7.Leave += textBox7_Leave;
             // 
             // label8
             // 

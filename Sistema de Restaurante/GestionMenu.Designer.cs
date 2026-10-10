@@ -61,7 +61,7 @@
             // textBox6
             // 
             textBox6.Font = new Font("Gabriola", 12F);
-            textBox6.Location = new Point(519, 229);
+            textBox6.Location = new Point(519, 217);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(222, 35);
             textBox6.TabIndex = 29;
@@ -69,7 +69,7 @@
             // textBox5
             // 
             textBox5.Font = new Font("Gabriola", 12F);
-            textBox5.Location = new Point(170, 311);
+            textBox5.Location = new Point(179, 312);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(222, 35);
             textBox5.TabIndex = 28;
@@ -103,7 +103,7 @@
             label7.AutoSize = true;
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Gabriola", 15.75F, FontStyle.Bold);
-            label7.Location = new Point(451, 227);
+            label7.Location = new Point(451, 215);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
             label7.Size = new Size(61, 39);
@@ -187,6 +187,7 @@
             button4.TabIndex = 35;
             button4.Text = "Buscar";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -197,6 +198,7 @@
             button3.TabIndex = 71;
             button3.Text = "Eliminar";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -207,6 +209,7 @@
             button2.TabIndex = 70;
             button2.Text = "Cancelar";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -217,6 +220,7 @@
             button1.TabIndex = 69;
             button1.Text = "Guardar cambios";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // GestionMenu
             // 
